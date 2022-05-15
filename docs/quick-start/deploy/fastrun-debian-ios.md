@@ -45,6 +45,9 @@ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add 
 # 添加下载源
 echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
 
+# 刷新软件列表
+sudo apt-get update
+
 # 安装MongoDB
 apt install -y mongodb-org
 
